@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <title> CSS POSITIONS</title> 
+   <style>
+    .debit-card-container{
+       position: relative;
+       width :300px;
+       height:170px;
+       background-color: rgb(209, 226, 226);
+       border-radius: 12px;
+       border-color: rgb(163, 12, 50);
+       box-shadow: 8px 8px 0px 0px rgb(172, 154, 154);
+       margin: left 100px;
+       margin-top:100px ;
+       left: 150px;
+       top: 50px;
+    }
+    .img-chip{
+        position :absolute;
+        height: 45px;
+        width:45px;
+        top: 50px;
+        left: 40px;
+    }
+    .img-visa{
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+        height: 50px;
+        width: 50px;
+     }
+     .card-number{
+        position:absolute;
+        left:15px;
+        bottom:35px;
+        color :black; 
+        font-size: 20px;
+     }
+     .card-name{
+        position: absolute;
+        left: 10px;
+        top:10px;
+        color:rgb(231, 11, 84);
+        font-size: 15px;
+    }
+    .img-bank{
+        position: absolute;
+        right:45px;
+        top:5px;
+        height: 40px;
+        width:40px;
+
+    }
+    .img-save{
+        position: absolute;
+        right:5px;
+        top: 8px;
+        height: 35px;
+    }
+     .card-validity{
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color:blue;
+        }
+        .card-holder{
+            position: absolute;
+            left:10px;
+            bottom: 60px;
+            height: 15px;
+            color:rgb(132, 0, 255)
+
+        }
+   </style>
 </head>
 <body>
-    ATM CARD
+    <div class="debit-card-container">
+        
+        <img src="atm chip.png" class="img-chip"/>
+        <img src="visa.png" class="img-visa"/>
+        <img src="bank.png"class="img-bank"/>
+        <img src="save-money.png"class="img-save"/>
+        <span class="card-number"> 9871 6542 3213 4624</span>
+        <span class="card-name"> GLOBAL <BR>
+        DEBIT+PREPAID</span>
+        <span class="card-validity">VALID : 10/27</span>
+        <span class="card-holder">MUKESH AMBANI</span>
+    </div>
+    
 </body>
 </html>
